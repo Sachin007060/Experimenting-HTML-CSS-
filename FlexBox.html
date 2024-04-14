@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .parent{
+            height: 400px;
+            display: flex;
+            /* flex-direction: column;
+            flex-wrap: wrap; */
+             flex-flow: row wrap;    /* flex flow is used for short hand for flex-direction or flex-wrap */
+            background-color: tomato;
+            /* overflow: hidden; */
+            /* gap: 40px; */
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .item {
+            background-color: rgb(235, 152, 152);
+            height: 150px;
+            width: 150px;
+            margin: 2px;
+        }
+
+        .item1 {
+            background-color: cyan;
+        }
+
+        .item2 {
+            background-color: black;
+        }
+
+        .item3 {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="item item1"></div>
+        <div class=" item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item1"></div>
+        <div class=" item item2"></div>
+        <div class="item item3"></div> 
+    </div>
+</body>
+
+</html>
