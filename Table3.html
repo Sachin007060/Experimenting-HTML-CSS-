@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" list="state">
+        <datalist id="state">
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="UP">UP</option>
+        </datalist>
+        
+
+    </div>
+    <div>
+        <select name="Year-of-passout" id="">
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+        </select>
+    </div>
+
+    <table border="2">
+        <tr>
+            <th>Col1</th>
+            <th>Col2</th>
+            <th>Col3</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Row1 Cell1</td>
+            <td>row1 cell2</td>
+            <td>row1 cell3</td>
+        </tr>
+        <tr>
+            <td>row2 cell2</td>
+            <td>row2 cell3</td>
+        </tr>
+        <tr>
+            <td colspan="3">row3 cell1</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+    <table border="2">
+        <caption>A test table with merged cells</caption>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">Average</th>
+            <th rowspan="2">Red Eyes</th>
+        </tr>
+        <tr>
+            <th>Height</th>
+            <th>Weight</th>
+        </tr>
+        <tr>
+            <th>Males</th>
+            <td>1.9</td>
+            <td>0.02</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <th>Females</th>
+            <td>1.7</td>
+            <td>0.03</td>
+            <td>45%</td>
+        </tr>
+    </table>
+    <br><br><br>
+    <ol type="i" start="3">
+        <li>Pen
+            <ul type="circle">
+                <li>Pen 1</li>
+                <li>Pen 2</li>
+            </ul>
+        </li>
+        <li>Pencile
+            <ul type="square">
+                <li>Pencile 1</li>
+                <li>Pencile 2</li>
+            </ul>
+        </li>
+    </ol>
+
+    <br><br><br>
+
+    <table border="2">
+        <tr>
+            <td rowspan="2">A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td colspan="2">D</td>
+        </tr>
+        <tr>
+            <td>
+                <table border="2">
+                    <tr>
+                        <td colspan="2">E</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>G</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <ol type="i" start="3">
+                    <li>Pen
+                        <ul type="circle">
+                            <li>Pen 1</li>
+                            <li>Pen 2</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Pencil
+                        <ul type="square">
+                            <li>Pencil 1</li>
+                            <li>Pencil 2</li>
+                        </ul>
+                    </li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
