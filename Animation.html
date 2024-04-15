@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .parent {
+            height: 500px;
+            background-color: skyblue;
+            position: relative;
+            animation-name: parent;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            overflow: hidden;
+        }
+        @keyframes parent {
+            0%{
+                background-color: skyblue;
+            }
+            50%{
+                background-color: orange;
+            }
+            100%{
+                background-color: black;
+            }
+            
+        }
+
+        .sun {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: yellow;
+            animation: box 5s 2s infinite alternate;
+            position: absolute;
+            left: 100px;
+            top: 20px;
+        }
+
+        @keyframes box {
+            0% {
+                top: 0px;
+                background-color: yellow;
+            }
+            50% {
+                background-color: red;
+            }
+
+            100% {
+                background-color: white;
+                top: 450px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="sun"></div>
+    </div>
+</body>
+
+</html>
