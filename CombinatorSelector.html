@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector</title>
+    <style>
+        /* div{
+            background-color: cyan;
+        } */
+
+
+        /* for direct and indirect child */
+        /* div p{
+            background-color: red;
+        } */
+
+
+        /* for direct child */
+        /* div>p{
+            background-color: tomato;
+        } */
+
+
+        /* For general sibling */
+        /* div~p{
+            background-color: aqua;
+        } */
+
+
+        /* for nearest Immediate/Adjacent sibling */
+        div+p{
+            background-color: cyan;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <P>Direct child</P>
+        <P>Direct child</P>
+        <span>
+            <p> paragraph Indirect child</p>
+        </span>
+    </div>
+        <P>Immediate/Adjacent sibling</P>
+        <P>General sibling</P>
+        <span>span General sibling</span>
+        <p>General sibling</p>
+</body>
+</html>
