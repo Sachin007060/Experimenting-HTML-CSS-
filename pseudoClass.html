@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class elector</title>
+    <style>
+
+        /* for targetting the paticular tag with in the div tag */
+        /* div :first-child{
+            background-color: red;
+        }
+        div :last-child{
+            background-color: rgb(36, 213, 63);
+        }
+        div :nth-child(4){
+            background-color: cyan;
+        }
+        div :nth-child(odd){
+            background-color: purple;
+        } */
+
+
+
+        /* For targetting the paticular paragraph tag which is under the div tag */
+        div p:first-of-type{
+            background-color: red;
+        }
+        div p:nth-of-type(4){
+            background-color: yellow;
+        }
+        div p:last-of-type{
+            background-color: cyan;
+        }
+
+
+
+        /* For targetting the paticular div tag which is under the div tag */
+        div span:first-of-type{
+            background-color: green;
+        }
+        div span:last-of-type{
+            background-color: orange;
+        }
+        div span:nth-of-type(3){
+            background-color: rgb(59, 8, 167);
+        }
+    
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <p>p 1st-child</p>
+        <span>span 1st child</span>
+        <p>p 2dn-child</p>
+        <p>p 3rd-child</p>
+        <p>p 4-child</p>
+        <p> p 5-child</p>
+        <p>p 6-child</p>
+        <span>span 2nd child</span>
+        <span>span 3rd child</span>
+        <p>p 7-child</p>
+        <span>last span tag</span>
+        <p>10-child</p>
+    </div>
+</body>
+</html>
