@@ -1,0 +1,283 @@
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Lemon";
+    }
+    @media screen and (min-width:319.5px) and (max-width:468.5px){
+       
+          header{
+            box-shadow: 0 1px 8px 1px gainsboro;
+            display: flex;
+            justify-content: space-between;
+            padding: 6vw 7vw;
+            align-items: center;
+          }
+          #logo{
+            
+            font-size: 6vw;
+          }
+          header nav{
+           
+            display: flex;
+            /* position: relative; */
+            font-size: 1.5vw;
+          }
+         
+          nav .container ul{
+            display: none;
+            gap:2vw;
+            text-transform: capitalize;
+          }
+          .container ul li a{
+            text-decoration: none;
+            color:black;
+          }
+          .container ul li a:hover{
+             text-decoration: 4px blue underline;
+          }
+          nav .hamburger-menu{
+            background-color: white;
+            display: flex;
+            cursor: pointer;
+      
+          }
+      
+          .hamburger-menu .icon-container{
+            color:black;
+            font-size: 5vw;
+           
+          }
+          .hamburger-menu ul{
+           
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            padding: 3vw;
+            gap: 4vw;
+            position: absolute;
+            /* border:2px solid black; */
+            width:100px;
+            right: 0;
+            top:20vw;
+            width: 100vw;
+            background-color: rgba(255, 255, 255, 0.944);
+            height: 40vh;
+            font-size: 5vw;
+            justify-content: center;
+      
+      
+          }
+          .hamburger-menu ul li a{
+            text-decoration: none;
+            color:black;
+            text-transform: capitalize;
+          }
+          .hamburger-menu ul li a:hover{
+            text-decoration: 1.3px blue underline;
+          }
+          .hamburger-menu .icon-container:hover+ul{
+            display: flex;
+          }
+      
+          section{
+              /* border:2px solid red; */
+              display: flex;
+              justify-content: space-between;
+              padding: 2vw 7vw;
+              flex-wrap: wrap;
+              align-items: center;
+              gap:8vw;
+              
+            }
+            section article:first-of-type{
+                /* border:2px solid yellow; */
+                display: flex;
+                flex-direction: column;
+                gap:5vw;
+                width:90%;
+                
+          }
+          section article:first-of-type h1{
+              font-size: 6vw;
+              font-weight: bold;
+              margin-top: 5vw;
+          }
+          section article:first-of-type h3{
+              font-size: 3.8vw;
+              color:#848484;
+          }
+          section article:first-of-type p{
+              color:#aeaeae;
+              font-size: 2.8vw;
+              margin: 1vw 0;
+          }
+          .social-media{
+              /* border: 2px solid green; */
+              display: flex;
+              justify-content: space-between;
+              width:60%;
+              border-radius: 5px;
+              overflow: hidden;
+          }
+          .linked-In,.face-book,.twitter-x{
+              padding: 3vw;
+              font-size: 4.5vw;
+              width:33.5%;
+              text-align: center;
+              color:white;
+          }
+          .linked-In{
+              background-color: #0e76a8;
+              
+          }
+          .face-book{
+              background-color: #39588e;
+          }
+          .twitter-x{
+              background-color: #00bee0;
+              
+          }
+          section article:last-of-type{
+              height: 80vw;
+              width:80vw;
+              background-image: url("/images/user-image.png");
+              background-repeat: no-repeat;
+              background-size: cover;
+      
+          }
+          
+    }
+    @media screen and (min-width:768.5px){
+
+        header{
+            box-shadow: 0 1px 8px 1px gainsboro;
+      display: flex;
+      justify-content: space-between;
+      padding: 2vw 7vw;
+      align-items: center;
+    }
+    #logo{
+      
+      font-size: 3vw;
+    }
+    header nav{
+     
+      display: flex;
+      position: relative;
+      font-size: 1.5vw;
+    }
+   
+    nav .container ul{
+      display: flex;
+      gap:2vw;
+      text-transform: capitalize;
+    }
+    .container ul li a{
+      text-decoration: none;
+      color:black;
+    }
+    .container ul li a:hover{
+       text-decoration: 4px blue underline;
+    }
+    nav .hamburger-menu{
+      background-color: white;
+      display: none;
+
+    }
+
+    .hamburger-menu .icon-container{
+      color:black;
+    }
+    .hamburger-menu ul{
+     
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 1vw;
+      gap: 2vw;
+      position: absolute;
+      border:2px solid black;
+      width:100px;
+      right: 0;
+      top:42px;
+
+
+    }
+    .hamburger-menu ul li a{
+      text-decoration: none;
+      color:black;
+      text-transform: capitalize;
+    }
+    .hamburger-menu ul li a:hover{
+      text-decoration: 1.3px blue underline;
+    }
+    .hamburger-menu .icon-container:hover+ul{
+      display: flex;
+    }
+
+    section{
+        /* border:2px solid red; */
+        display: flex;
+        justify-content: space-between;
+        padding: 2vw 7vw;
+
+    }
+    section article:first-of-type{
+        /* border:2px solid yellow; */
+        display: flex;
+        flex-direction: column;
+        gap:2vw;
+        width:50%;
+    }
+    section article:first-of-type h1{
+        font-size: 3vw;
+        font-weight: bold;
+        margin-top: 5vw;
+    }
+    section article:first-of-type h3{
+        font-size: 1.8vw;
+        color:#848484;
+    }
+    section article:first-of-type p{
+        color:#aeaeae;
+        font-size: 1.3vw;
+        margin: 1vw 0;
+        text-align: justify;
+    }
+    .social-media{
+        /* border: 2px solid green; */
+        display: flex;
+        justify-content: space-between;
+        width:30%;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .linked-In,.face-book,.twitter-x{
+        padding: 1vw;
+        font-size: 1.8vw;
+        width:33.5%;
+        text-align: center;
+        color:white;
+    }
+    .linked-In{
+        background-color: #0e76a8;
+        
+    }
+    .face-book{
+        background-color: #39588e;
+    }
+    .twitter-x{
+        background-color: #00bee0;
+        
+    }
+    section article:last-of-type{
+        height: 400px;
+        width:400px;
+        background-image: url("/images/user-image.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    
+}
