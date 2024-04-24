@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box childern property..</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .parent{
+            background-color: black;
+            height: 600px;
+            display: flex;
+            text-align: center;
+            font-size: 23px;
+        }
+        .item{
+            height: 150px;
+            width: 250px;
+            padding: 15px;
+            
+        }
+        .item1{
+            background-color: rgb(161, 204, 242);
+            /* order: 1; it will goes into the last */
+            /* align-self: flex-end; 
+            flex-basis: 20%; */
+            flex-grow: 3;
+        }
+        .item2{
+            background-color: aquamarine;
+            /* flex-basis: 40%; */
+            flex-shrink: 7;
+        }
+        .item3{
+            background-color: rgb(244, 244, 177);
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="item item1">Home</div>
+        <div class="item item2">About</div>
+        <div class="item item3">Contact us</div>
+    </div>
+</body>
+</html>
