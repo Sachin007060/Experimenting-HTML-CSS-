@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        /* For header design */
+        header {
+            /* background-color: tomato; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* border: 2px solid black; */
+            box-shadow: 2px 2px 23px 1px #9593a3;
+        }
+
+        header:hover {
+            background-color: white;
+            box-shadow: 2px 2px 23px 1px rgb(178, 176, 232);
+        }
+
+        /* For logo design */
+        .logo {
+            font-size: 23px;
+            letter-spacing: 1vh;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+            left: 16vh;
+        }
+
+        .header-div {
+            align-items: center;
+        }
+
+        header .container ul {
+            /* background-color: cyan; */
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 4rem;
+            position: relative;
+            right: 12vh;
+            padding: 2.2vh 10.2vh;
+        }
+
+        header .container ul li {
+            text-transform: capitalize;
+            font-size: 19px;
+        }
+
+        header .container ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        header .container ul li a:hover {
+            text-decoration: 3px underline;
+            color: rgb(61, 58, 58);
+        }
+
+        #hmbg {
+            display: none;
+            height: 32px;
+            width: 38px;
+        }
+
+        @media screen and (max-width:468px) {
+            #hmbg {
+                display: block;
+                height: 32px;
+                width: 38px;
+                position: relative;
+                right: 26px;
+            }
+        }
+
+        @media screen and(max-width: 768px) and (min-width: 1024px) {
+            header .container ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 4rem;
+                padding: 2.2vh 10.2vh;
+            }
+        }
+
+        /* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+        section {
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: space-between;
+            background-color: hotpink;
+            padding: 2vw;
+            text-align: justify;
+        }
+        
+        section .main-artical{
+            flex-direction: row;
+            width: 222vh;
+            background-color: red;
+        }
+
+        @media screen and (max-width: 538px) {
+            header {
+                /* display: flex;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: 2px 2px 23px 1px #9593a3; */
+                /* background-color: red; */
+            }
+
+            header .container ul {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 1rem;
+                position: relative;
+                right: 0vh;
+                padding: 3.2vh 6.2vh;
+            }
+
+            @media screen and (max-width: 469px) {
+                header .container ul {
+                    display: none;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            logo
+        </div>
+        <nav>
+            <div class="container">
+                <ul type="none">
+                    <li><a href="#">home </a></li>
+                    <li><a href="#">about </a></li>
+                    <li><a href="#">contact </a></li>
+                </ul>
+            </div>
+        </nav>
+        <img id="hmbg" src="hmbgr.png" alt="">
+    </header>
+    <section>
+        <article class="main-artical">
+            <h1>Midoria</h1>
+            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem libero reiciendis amet deleniti repellat, necessitatibus ab! Doloribus sapiente maiores, consectetur voluptates fugiat quibusdam.</p>
+        </article>
+        <article>
+            <img src="newYO.png" alt="img">
+        </article>
+    </section>
+</body>
+
+</html>
